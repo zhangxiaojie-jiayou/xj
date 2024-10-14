@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>flex 布局</title>
+    <style>
+        body{
+            margin: 0;
+            height: 100vh;
+            background-color: #eee;
+        }
+        
+        .flex{
+            display: flex;
+        }
+        .baise{
+            background-color: white;
+        }
+        .flex1{
+            flex: 1;
+        }
+        .coiumn{
+            flex-direction: column;
+        }
+        .bianju{
+            margin: 8px;
+        }
+        .youbianju{
+            margin-right: 8px;
+        }
+        .shangbianju{
+            margin-top: 8px;
+        }
+        .yinying{
+            box-shadow: 10px 5px 5px          rgb(237, 232, 232);
+        }
+    </style>
+</head>
+<body class="flex">
+    <!-- 侧边栏 -->
+     <div style="width: 300px; z-index: 2;" class="baise yinying">
+        <!--头像栏-->
+        <div class="flex" style="align-items: center; justify-content: center; height: 100px; border: 4px solid #fcf8f8;">
+        <img src="zzzz.jpg" alt="图片" height="60px">
+            <div style="font-size: 30px; margin-left: 10px;">章晓杰</div>
+        </div>
+        <!--导航栏--> 
+        <div class="flex1 yinying" style="align-items: center; justify-content: center;">
+            <p style="font-size: 30px;">导航</p>
+     </div>
+     <div style="align-items: center; justify-content: center;" class="flex1 yinying">
+        <p style="font-size: 30px;">导航</p>
+     </div>
+     <div style="align-items: center; justify-content: center;" class="flex1 yinying">
+        <p style="font-size: 30px;">导航</p>
+     </div>
+     <div style="align-items: center; justify-content: center;" class="flex1 yinying">
+        <p style="font-size: 30px;">导航</p>
+     </div>
+     <div style="align-items: center; justify-content: center;" class="flex1 yinying">
+        <p style="font-size: 30px;">导航</p>
+     </div>
+     <div style="align-items: center; justify-content: center;" class="flex1 yinying">
+        <p style="font-size: 30px;">导航</p>
+     </div>
+     </div>
+    <!-- 主区域-->
+     <div class="flex1 flex coiumn">
+    <!-- 头部栏-->
+     <div style="height: 100px; border: 4px solid #fcf8f8;z-index: 1;"class="baise"></div>
+     <!--内容区-->
+     <div class="flex1 flex " style="overflow: auto;">
+     <!--左区-->
+     <div style="flex: 3;" class="flex coiumn bianju">
+     <!--数据区-->
+     <div class="flex">
+     <!--数据块-->
+     <div class="flex1 baise youbianju yinying" style="height: 140px;" ></div>
+     <div class="flex1 baise youbianju yinying" style="height: 140px;" ></div>
+     <div class="flex1 baise youbianju yinying" style="height: 140px;" ></div>
+     <div class="flex1 baise yinying" style="height: 140px;" ></div>
+     </div>
+     <!--列表区-->
+     <div class="flex coiumn">
+     <!--列表项-->
+     <div class="baise shangbianju yinying" style="height: 350px;"></div>
+     <div class="baise shangbianju yinying" style="height: 350px;"></div>
+     <div class="baise shangbianju yinying" style="height: 350px;"></div>
+     <div class="baise shangbianju yinying" style="height: 350px;"></div>
+     <div class="baise shangbianju yinying" style="height: 350px;"></div>
+     <div class="baise shangbianju yinying" style="height: 350px;"></div>
+     </div> 
+     </div>  
+     <!--右区-->
+     <div style="flex: 1;" class="youbianju shangbianju">
+        <!--提示区-->
+        <div style="height: 300px;" class="baise yinying"></div>
+        <!--消息区-->
+        <div style="height: 500px;" class="baise shangbianju yinying"></div>
+     </div>   
+
+     </div>    
+     </div>
+</body>
+</html>
